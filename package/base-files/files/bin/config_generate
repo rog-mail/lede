@@ -147,8 +147,8 @@ generate_network() {
 		static)
 			local ipad
 			case "$1" in
-				lan) ipad=${ipaddr:-"192.168.2.1"} ;;
-				*) ipad=${ipaddr:-"192.168.$((addr_offset++)).1"} ;;
+				lan) ipad=${ipaddr:-"192.168.2.252"} ;;
+				*) ipad=${ipaddr:-"192.168.$((addr_offset++)).252"} ;;
 			esac
 
 			netm=${netmask:-"255.255.255.0"}
